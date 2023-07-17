@@ -10,7 +10,7 @@ const Nav = ({ filtered, handleChange }) => {
                 </div>
                 <div className="seach">
                     <div className="citys">
-                        {filtered.map((el, i) => <Citys key={i} el={el} />)}
+                    {filtered.slice(0, 1).map((el, i) => <Citys key={i} el={el} />)}
                     </div>
                     <input
                         onChange={handleChange}
