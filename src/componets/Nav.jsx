@@ -1,6 +1,7 @@
 import logo from '../img/logo.png';
+import Citys from './Citys';
 
-const Nav = () => {
+const Nav = ({ filtered, handleChange }) => {
     return (
         <nav>
             <div className="nav">
@@ -8,8 +9,14 @@ const Nav = () => {
                     <img src={logo} alt="" />
                 </div>
                 <div className="seach">
-                    <p>Helsinki,Filand</p>
-                    <input type="text" placeholder='Add guests' />
+                    <div className="citys">
+                        {filtered.map((el, i) => <Citys key={i} el={el} />)}
+                    </div>
+                    <input
+                        onChange={handleChange}
+                        type="text"
+                        placeholder='Add guests'
+                    />
                     <span className="material-symbols-outlined">
                         search
                     </span>

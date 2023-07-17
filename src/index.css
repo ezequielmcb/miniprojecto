@@ -19,6 +19,7 @@ body{
 /* / INICIO NAV / */
 
 .nav{
+    max-width: 1440px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,6 +35,8 @@ body{
 }
 
 .seach > input{
+    display: flex;
+    flex-direction: column;
     height: 45px;
     width: 5.5rem;
     border: #fff;
@@ -43,6 +46,14 @@ body{
 .seach > span{
     color:#EB5757;
     font-weight: 450;
+}
+
+.citys{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 45px;
+    width: 5.5rem;
 }
 
 /* / FINAL NAV / */
@@ -71,7 +82,7 @@ body{
 .card > img{
     height: 269px;
     width: 395px;
-    border-radius: 15px;
+    border-radius: 24px;
 }
 
 .description{
@@ -105,6 +116,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     font-weight: 500;
     font-size: 14px;
     color: #4f4f4f;
